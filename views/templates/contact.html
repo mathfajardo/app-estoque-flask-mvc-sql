@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Adicionar produtos{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Adicionar novo produto</h1>
+    <div>
+        <form action="produtos/new" method="POST">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" required>
+            </div>
+
+            <div>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" name="quantidade" required>
+            </div>
+
+            <div>
+                <label for="Categoria">Categoria:</label>
+                <input type="text" name="categoria" required>
+            </div>
+
+            <div>
+                <button type="submit">Salvar</button>
+                <a href="/">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

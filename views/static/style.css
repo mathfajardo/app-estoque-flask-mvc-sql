@@ -1,0 +1,115 @@
+body {
+    background: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #ff9800;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    color: #ff9800;
+    text-align: center;
+}
+
+a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tabela-conteiner {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.tabela-estilizada {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.tabela-estilizada th, .tabela-estilizada td {
+    border: 1px solid #ff9800;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela-estilizada th {
+    background: #ff9800;
+    color: #fff;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ff9800;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff9800;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+}
+
+button {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e67c00;
+}
+
+footer {
+    background: #ff9800;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
