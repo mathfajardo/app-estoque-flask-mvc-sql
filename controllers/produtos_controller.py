@@ -24,4 +24,18 @@ def configure_routes(app):
     def remover_produto(id):
         Produto.remover_produto(id)
         return redirect(url_for('index'))
+    
+    @app.route("/editar/<int:id>", methods=["POST", "GET"])
+    def editar_produto(id):
+        if request.method == "GET":
+            produto = Produto.get_produto(id)
+            return render_template("edit.html", produto=produto)
+            
+        nome = request.form["nome"]
+        quantidade = request.form["quantidade"]
+        categoria = request.form["categoria"]
+
+        Produto.editar_produto(id, nome, quantidade, categoria)
+        return redirect(url_for('index'))
+
         
